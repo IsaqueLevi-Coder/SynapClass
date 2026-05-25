@@ -270,9 +270,8 @@ footer p {
   margin-bottom: 15px;
 }
 
-/* --- HOVER DOS BOTÕES EXISTENTES --- */
 .botao-nav:hover, .botao:hover {
-    background: #36368a !important; /* Roxo mais escuro */
+    background: #36368a !important;
     transform: scale(1.05);
     transition: 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -282,14 +281,13 @@ footer p {
     color: white !important;
 }
 
-/* --- ESTILO DO MODAL (JANELA QUE ABRE) --- */
 .modal {
     display: none; 
     position: fixed;
     z-index: 2000;
     left: 0; top: 0;
     width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.7); /* Fundo escurecido */
+    background-color: rgba(0,0,0,0.7); 
 }
 
 .modal-content {
