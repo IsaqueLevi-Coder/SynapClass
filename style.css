@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: #4c4cae;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-menu {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.botao-nav {
+  background: white;
+  color: #4c4cae;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.intro {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+
+.intro-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-topo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.logo-svg {
+  width:110px;
+  height:auto;
+}
+
+.intro h1 {
+  font-size: 45px;
+  color: white;
+  -webkit-text-stroke: 2px #4c4cae;
+}
+
+.caixa {
+  width: 450px;
+  background: #4c4cae;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.imagem-intro img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sobre {
+  background: #4c4cae;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-texto {
+  width: 40%;
+  color: white;
+}
+
+.sobre-texto h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.sobre-texto p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.cards {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #4c4cae;
+  font-weight: bold;
+}
+
+.vantagens {
+  padding: 60px;
+}
+
+.vantagens h1 {
+  font-size: 40px;
+  color: white;
+  -webkit-text-stroke: 2px #4c4cae;
+  margin-bottom: 30px;
+}
+
+.vantagens ul {
+  margin-left: 30px;
+}
+
+.vantagens li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.depoimentos {
+  background: #4c4cae;
+  padding: 60px;
+}
+
+.depoimentos h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.cards-depoimentos {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.depoimento {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.depoimento img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.depoimento p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cadastro {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro-esquerda {
+  width: 30%;
+  margin-left: 120px;
+}
+
+.cadastro-box {
+  background: #4c4cae;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.botao {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #4c4cae;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.imagem-cadastro img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+footer {
+  background: #4c4cae;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+/* --- HOVER DOS BOTÕES EXISTENTES --- */
+.botao-nav:hover, .botao:hover {
+    background: #36368a !important; /* Roxo mais escuro */
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.botao-nav:hover {
+    color: white !important;
+}
+
+/* --- ESTILO DO MODAL (JANELA QUE ABRE) --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Fundo escurecido */
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    position: relative;
+    text-align: center;
+}
+
+.fechar {
+    position: absolute;
+    right: 15px; top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#formCadastro input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao-enviar {
+    background: #4c4cae;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

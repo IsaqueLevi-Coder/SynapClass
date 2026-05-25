@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynapClass</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-menu">SynapClass</div>
+        <nav>
+            <a href="#sobre" onclick="scrollSuave(event, 'sobre')">Sobre nós</a>
+            <a href="#vantagens" onclick="scrollSuave(event, 'vantagens')">Vantagens</a>
+            <a href="#depoimentos" onclick="scrollSuave(event, 'depoimentos')">Depoimentos</a>
+            <a href="javascript:void(0)" onclick="abrirModal()" class="botao-nav">Cadastrar-se</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro-esquerda">
+            <div class="logo-topo">
+                <img src="img/Diagrama de rede minimalista 1.png" class="logo-svg">
+                <h1>SynapClass</h1>
+            </div>
+
+            <div class="caixa">
+                A SynapClass tem como principal objetivo democratizar o acesso à educação digital gratuita, reunindo em
+                um único ambiente links de cursos disponíveis em diversas plataformas.
+            </div>
+
+        </div>
+
+        <div class="imagem-intro">
+            <img src="img/istockphoto-1500285927-612x612 1.jpg" alt="mulher">
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-texto">
+            <h1>Sobre o site</h1>
+            <p>
+                A SynapClass busca garantir acessibilidade a materiais educativos ao usuário disponibilizando links de várias plataformas, 
+                facilitando o acesso a cursos gratuitos que estão disponíveis pelo governo ou por plataformas privadas.
+                A SynapClass também disponibiliza, para seus usuários, exercícios
+                baseados nos conteúdos que são divulgados na plataforma.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="img/bradesco.jpg" alt="bradesco">
+                <div>
+                    <h2>Criando um Projeto com Interface Gráfica Utilizando a Linguagem Python</h2>
+                    <p>Curso disponível pela Fundação Bradesco.</p>
+                    <a href="https://www.ev.org.br/cursos/criando-um-projeto-com-interface-grafica-utilizando-a-linguagem-python"
+                        target="_blank">
+                        Acessar curso
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Cursos-Gratuitos-Escola-Virtual.gov_.jpg" alt="escolavirtual">
+                <div>
+                    <h2>Comunicação Assertiva: Oratória, Retórica e Técnicas de Apresentação</h2>
+                    <p>Curso disponível pela Escola Virtual.</p>
+                    <a href="https://www.escolavirtual.gov.br/curso/1347" target="_blank">Acessar curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vantagens" id="vantagens">
+        <h1>Vantagens</h1>
+        <ul>
+            <li>Fácil acesso a vários conteúdos.</li>
+            <li>Interface de fácil entendimento.</li>
+            <li>O usuário usará somente uma plataforma.</li>
+            <li>Saberá quais cursos estão sendo ofertados pelo governo.</li>
+        </ul>
+    </section>
+
+    <section class="depoimentos" id="depoimentos">
+        <h1>O que os clientes dizem</h1>
+        <div class="cards-depoimentos">
+            <div class="depoimento">
+                <img src="img/Ellipse 4.jpg" alt="Paulo">
+
+                <p>"A SynapClass tem ferramentas que ajudam nos estudos."</p>
+
+                <strong>Paulo Ferreira Santos</strong>
+
+            </div>
+
+            <div class="depoimento">
+                <img src="img/Ellipse 2.jpg" alt="Henrique">
+                <p>"O objetivo da SynapClass é bastante interessante."</p>
+
+                <strong>Henrique Fernandes Silva</strong>
+
+            </div>
+
+            <div class="depoimento">
+                <img src="img/Ellipse 3.jpg" alt="Mariane">
+                <p>"A SynapClass ajuda o usuário a buscar cursos gratuitos."</p>
+
+                <strong>Marina Felix Carvalho</strong>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cadastro" id="cadastro">
+        <div class="cadastro-esquerda">
+            <div class="cadastro-box">
+                Faça seu cadastro já!<br>
+                Aproveite um aprendizado mais fácil e eficiente!<br>
+                Clique abaixo.
+            </div>
+
+            <button class="botao" onclick="abrirModal()">Começar Agora!</button>
+
+        </div>
+
+        <div class="imagem-cadastro">
+            <img src="img/stocksnap-man-2562325_1920 1.jpg" alt="homem">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SynapClass. Todos os direitos reservados.</p>
+
+        <p>
+            A SynapClass é uma plataforma dedicada a divulgar cursos gratuitos e acessíveis.
+        </p>
+
+        <p>Links: Início | Sobre | Cursos | Contato</p>
+    </footer>
+
+    <script>
+        console.log("SynapClass carregado");
+    </script>
+
+<div id="modalInscricao" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <h2>Inscrição SynapClass</h2>
+        <form id="formCadastro">
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <button type="submit" class="botao-enviar">Enviar Cadastro</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
